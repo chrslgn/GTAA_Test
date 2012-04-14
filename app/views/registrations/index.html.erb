@@ -1,0 +1,31 @@
+<h1>Listing registrations</h1>
+
+<table width="100%">
+  <tr>
+    <th>Name</th>
+    <th>Question1</th>
+    <th>Question2</th>
+    <th>Question3</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @registrations.each do |registration| %>
+  <tr>
+    <td><%= registration.name %></td>
+    <td><%= registration.question1 %></td>
+    <td><%= registration.question2 %></td>
+    <td><%= registration.question3 %></td>
+    <td><%= link_to pluralize(registration.registration_responses.length, 'response'), registration_registration_responses_path(registration) %></td>
+    <td><%= link_to 'Show', registration %></td>
+    <td><%= link_to 'Edit', edit_registration_path(registration) %></td>
+    <td><%= link_to 'Destroy', registration, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Registration', new_registration_path %>

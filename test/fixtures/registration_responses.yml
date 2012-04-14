@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  registration_id: one
+  response1: MyString
+  response2: MyString
+  response3: MyString
+
+two:
+  registration_id: two
+  response1: MyString
+  response2: MyString
+  response3: MyString

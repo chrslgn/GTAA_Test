@@ -1,0 +1,28 @@
+<h1>Registration Responses for <%= @registration.name unless @registration.name.nil? %></h1>
+
+<table>
+  <tr>
+    <th>Response1</th>
+    <th>Response2</th>
+    <th>Response3</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @registration_responses.each do |registration_response| %>
+  <tr>
+    <td><%= registration_response.response1 %></td>
+    <td><%= registration_response.response2 %></td>
+    <td><%= registration_response.response3 %></td>
+    <td><%= link_to 'Show', [@registration, registration_response] %></td>
+    <td><%= link_to 'Edit', edit_registration_registration_response_path(@registration, registration_response) %></td>
+    <td><%= link_to 'Destroy', [@registration, registration_response], confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Back', registrations_path %> | 
+<%= link_to 'New Registration response', new_registration_registration_response_path(@registration) %>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Response1:</b>
+  <%= @registration_response.response1 %>
+</p>
+
+<p>
+  <b>Response2:</b>
+  <%= @registration_response.response2 %>
+</p>
+
+<p>
+  <b>Response3:</b>
+  <%= @registration_response.response3 %>
+</p>
+
+
+<%= link_to 'Edit', edit_registration_registration_response_path(@registration, @registration_response) %> |
+<%= link_to 'Back', registration_registration_responses_path(@registration) %>

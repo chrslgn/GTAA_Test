@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @registration.name %>
+</p>
+
+<p>
+  <b>Question1:</b>
+  <%= @registration.question1 %>
+</p>
+
+<p>
+  <b>Question2:</b>
+  <%= @registration.question2 %>
+</p>
+
+<p>
+  <b>Question3:</b>
+  <%= @registration.question3 %>
+</p>
+
+
+<%= link_to 'Edit', edit_registration_path(@registration) %> |
+<%= link_to 'Back', registrations_path %>

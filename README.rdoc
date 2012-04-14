@@ -1,0 +1,19 @@
+Here we have a Rails application that consists of two objects: registrations that have a name and three questions, and registration_responses which contain the id of the registration and the three answers to the questions. There can be any number of registrations, each with their own set of answers.
+
+Please do the following:
+
+1) A co-worker tells you that the site doesn't work. When they try to fill out a registration it doesn't seem to show up on the list of registration responses. Figure out what's wrong with the code and fix it.
+
+2) Make the logo at the top of the page change to Game Day Gold (#EEB211) when someone hovers their mouse over it.
+
+3) Make the Name field for registrations required.
+
+4) A co-worker tells you he wants a way to see all responses for all registrations at once on one screen and be able to click a checkbox next to them and have that checkbox be saved in some manner and be visible the registration_response show/index pages. Design and implement a way for him to do this.
+
+You can visit http://gtaadevtest.heroku.com/ to see an example implementation.
+
+You will likely need to add at least one new action/view and either a second action or modify an existing action to handle the updating of checkmarks. The example uses jquery but you are free to use whatever method you like. If you do choose to use jquery, you might find this method in particular useful: http://api.jquery.com/jQuery.post/
+
+
+
+When you are finished zip the code up and email it back to Lora Magnuson (lora.magnuson@alumni.gatech.edu) by 8am on Monday.

@@ -1,0 +1,12 @@
+log/*
+db/*.sqlite3
+db/*.sqlite3-journal
+db/schema.rb
+config/database.yml
+tmp/*
+uploads
+.DS_Store
+.dropbox
+Icon?
+*.pid
+*.old
